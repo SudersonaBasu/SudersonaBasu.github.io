@@ -1,0 +1,9 @@
+-------------------------------------------------------------------------------
+Test set: Important.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 23.27 s <<< FAILURE! -- in Important.TestRunner
+Important.TestRunner.runScenario["Handle the Cookie", "Login Feature"](1) -- Time elapsed: 0.294 s <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "Important.CommonMethods.assertElementIsDisplayed(org.openqa.selenium.By)" because "StepDefinitions.Login.commonMethods" is null
+	at StepDefinitions.Login.PopUpDisappears(Login.java:59)
+	at ✽.Cookie pop-up disappears(file:///Users/sudersonabasu/IdeaProjects/TestFrameworkSeleniumCucumber/src/test/resources/FeatureFiles/Login.feature:6)
+
