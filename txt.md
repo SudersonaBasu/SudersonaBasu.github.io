@@ -38,7 +38,7 @@ Assuming that using File CP as Receiver.
 
 ## BOD Publishing:
 Pre- Requisite: Open EC Grid installed in System and do tenant mapping i.e.., add Tenant mapping as Infor.
-1.	Open the BOD Publish from LN link: https://lndev.infor.com:8446/lnui_ga/servlet/standalone?startupArgument=Maintenance , select the Default checkbox, and click START LN UI.
+1.	Open the BOD Publish from LN_link:[https://lndev.infor.com:8446/lnui_ga/servlet/standalone?startupArgument=Maintenance] , select the Default checkbox, and click START LN UI.
 2.	Go to Options > Change Company, and set the Selected Company, Logistic Company, and Financial Company as 9940 / 9941 / 9942.
 3.	Ensure the Package Combination is set to Icem01, then click OK.
 4.	Click Common, expand BOD Messaging > Publish BODs, and select Publish Order Management Transactional Data.
