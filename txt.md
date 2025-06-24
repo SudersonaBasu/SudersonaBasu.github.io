@@ -1,11 +1,11 @@
-## Connection Points and Document Flows
-# Author: Sudersona Basu
-# Role: Integration & Release QA
-# Date: 2025-06-23
+# Connection Points and Document Flows
+## Author: Sudersona Basu
+## Role: Integration & Release QA
+## Date: 2025-06-23
 
 # Infor LN
 Purpose: If LN Application wants to send or receive some data using ION. Can be used as both Receiver and Sender
-Creation Steps:
+## Creation Steps:
 Pre Req: Ensure you have an EC (Enterprise Connector) already created and in OK state. (You can create your own EC if not available.)
 Using LN CP as Sender (SBasu_LN_SendDoc)
 1.	Navigate to Connection Points and click on the “+ Add” button.
@@ -26,7 +26,7 @@ Company: 9940/9941(preferable)/9942
 7.	Move to the Document tab and select the type of document you want to publish.
 •	Note: When using the LN Connection Point as a sender, it supports only the Purchase Order document.
 •	As a receiver, it supports any document type.
-How to create Document Flow
+## How to create Document Flow
 Assuming that using File CP as Receiver.
 1.	In the Navigation Menu, click on the Connect dropdown and select Data Flows. Then, click on the “+ Add” button and choose “Document Flow” from the available options.
 2.	 Enter a valid name for the Document Flow.
@@ -36,7 +36,7 @@ Assuming that using File CP as Receiver.
 6.	Under File, select the appropriate file Connection Point (CP).
 7.	Activate the Document Flow.
 
-BOD Publishing:
+## BOD Publishing:
 Pre- Requisite: Open EC Grid installed in System and do tenant mapping i.e.., add Tenant mapping as Infor.
 1.	Open the BOD Publish from LN link: https://lndev.infor.com:8446/lnui_ga/servlet/standalone?startupArgument=Maintenance , select the Default checkbox, and click START LN UI.
 2.	Go to Options > Change Company, and set the Selected Company, Logistic Company, and Financial Company as 9940 / 9941 / 9942.
@@ -48,7 +48,7 @@ Pre- Requisite: Open EC Grid installed in System and do tenant mapping i.e.., ad
 8.	Click Process, then OK, set the Device value to D, and click CONTINUE.
 9.	Finally, check the status of the published BOD in the report to confirm if it is Published or Failed.
 * Once the BOD is published successfully, it can also be verified under the Active Connection Points section.
-How to Monitor:
+## How to Monitor:
 1.	Navigate and Open OneView
 2.	Apply Filters:
 •	Date & Time Range: Select Last Hour
