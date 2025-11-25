@@ -31,3 +31,9 @@ flowchart TD
     V -->|No| X[Proceed to Production]
 
     X --> Y[IGS Releases (Even Numbers)]
+    Y --> Z[Additional IGS Deployments]
+    Z --> AA[TRAIN Ticket Creation]
+    Z --> AB[Governance & PMO Approvals]
+
+    X --> AC[Supplementary Updates]
+    AC --> AD{Planned or Unplanned?}
