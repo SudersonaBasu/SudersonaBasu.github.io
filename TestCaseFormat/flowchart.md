@@ -77,3 +77,20 @@ flowchart TD
   - Ensure no duplicate or conflicting calls  
   - Counters align with checkbox states  
 
+
+
+---
+
+## 🧪 Test Scenarios
+
+| Scenario ID | Description | Steps | Expected Result |
+|-------------|-------------|-------|-----------------|
+| TS-01 | Validate Sending Paused | Check → Uncheck Sending Paused | UI reflects state; Sent counter frozen/resumes correctly |
+| TS-02 | Validate Receiving Paused | Check → Uncheck Receiving Paused | UI reflects state; Received counter frozen/resumes; Pending adjusts |
+| TS-03 | Persistence After Refresh | Pause → Refresh Page | Checkbox state persists; backend unchanged |
+| TS-04 | Persistence After Navigation | Pause → Navigate Away → Return | State remains consistent |
+| TS-05 | Rapid Toggle Stress Test | Rapidly toggle Sending/Receiving | UI reflects each action; no duplicate/conflicting API calls |
+| TS-06 | Backend Verification | Perform pause/resume actions | API calls match user actions; counters align |
+| TS-07 | Negative Scenario | Auto-refresh disabled | Filters remain intact; no unexpected refreshes |
+
+---
