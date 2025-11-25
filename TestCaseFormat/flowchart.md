@@ -20,7 +20,7 @@ flowchart TD
     J --> K[Navigate Away & Return]
     K --> L[States Remain Consistent]
     L --> M[Backend API Calls Match User Actions]
-
+```
 
 # Visual Scenario-Based Test Design  
 **Feature:** Active Connection Points – Pause/Resume Functionality  
@@ -76,3 +76,4 @@ flowchart TD
   - API calls via DevTools  
   - Ensure no duplicate or conflicting calls  
   - Counters align with checkbox states  
+
