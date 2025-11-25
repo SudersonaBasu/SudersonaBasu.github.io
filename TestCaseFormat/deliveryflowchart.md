@@ -22,18 +22,3 @@ flowchart TD
     N --> Q[Deployment Details]
 
     I --> R[Build & Deployment]
-    R --> S[Build Finalization in Jenkins]
-    R --> T[Deployment to CQA]
-    R --> U[Stage Deployment]
-
-    U --> V{Issues Found?}
-    V -->|Yes| W[Escalate to Dev Teams & Governance]
-    V -->|No| X[Proceed to Production]
-
-    X --> Y[IGS Releases (Even Numbers)]
-    Y --> Z[Additional IGS Deployments]
-    Z --> AA[TRAIN Ticket Creation]
-    Z --> AB[Governance & PMO Approvals]
-
-    X --> AC[Supplementary Updates]
-    AC --> AD{Planned or Unplanned?}
