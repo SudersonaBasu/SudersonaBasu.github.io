@@ -31,22 +31,3 @@ flowchart TD
     V -->|No| X[Proceed to Production]
 
     X --> Y[IGS Releases (Even Numbers)]
-    Y --> Z[Additional IGS Deployments]
-    Z --> AA[TRAIN Ticket Creation]
-    Z --> AB[Governance & PMO Approvals]
-
-    X --> AC[Supplementary Updates]
-    AC --> AD{Planned or Unplanned?}
-    AD --> AE[Planned SU: Follow Standard Process]
-    AD --> AF[Unplanned SU: Urgent Fixes, NewRC]
-
-    X --> AG[Critical Fixes]
-    AG --> AH{Issue Type}
-    AH --> AI[Hotfix: Single Component]
-    AH --> AJ[Full Release: Multiple Components]
-    AJ --> AK[Governance Approval & Redeployment]
-
-    X --> AL[Post-Release Steps]
-    AL --> AM[Download SBOMs]
-    AM --> AN[Verify Build Versions]
-    AN --> AO[Upload to SBOM Registry]
