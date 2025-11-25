@@ -51,7 +51,7 @@
 
 
 
-```mermaid
+
 flowchart TD
     A[Launch ION Application] --> B[Navigate to Active Connection Points]
     B --> C[Select Connection Point]
